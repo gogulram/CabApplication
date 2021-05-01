@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LoginPage</title>
+
+    <style>
+        .loginBanner {
+            width: 350px;
+            height: 250px;
+            padding: 80px;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            background: lightgreen;
+        }
+        
+        body {
+            background-image: url(http://blog.olacabs.com/wp-content/uploads/2018/01/Ola-Fleet2.gif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        .TitleText {
+            text-align: center;
+            color: blue;
+        }
+    </style>
+
+    <script src="ConditionforLogin.js">
+    </script>
+
+</head>
+
+<body>
+
+    <section class="loginBanner">
+        <section class="TitleText">
+            <h3>--------OLA-------</h3>
+            <h3>-------LOGIN PAGE-------</h3>
+        </section>
+        <form method="post">
+            <label for="username">Enter Your username:</label>
+            <input type="text" name="username" id="username" placeholder="Enter UserName" required><br> <br>
+            <label for="password">Enter Password: </label>
+            <input type="password" name="passwrd" id="password" placeholder="Enter Password" required> <br> <br> <br>
+            <input type="Submit" onclick="login()" value="login">
+            <button type="reset">reset</button>
+            <button type="button">click here</button>
+        </form>
+    </section>
+
+</body>
+
+</html>

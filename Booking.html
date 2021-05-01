@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking_Page</title>
+    <style type="text/css">
+        body {
+            background-color: lightgreen;
+            text-align: center;
+            /* background-image:url("");  */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>----------BOOKING PAGE---------</h1>
+    <form method="post" action="Billing_Details.html">
+        <label for="cabtype">Choose your preferred cab type </label>
+        <select name="cars" id="cars">
+                <option disabled selected>select cab type</option>            
+                <option value="Micro">Micro</option>
+                <option value="Mini">Mini</option>
+                <option value="Prime">Prime</option>
+            </select> <br> <br>
+        <label for="kilometer" onclick="PriceCalculation()">Enter the Kilometers </label>
+        <input type="number" name="kilometer" id="kilometer" placeholder="km" min=1 max=1000 required> <br> <br>
+        <b>Total amount for this ride is  <span id="price"> </span></b><br><br>
+
+        <label for="journeydate">Enter your Journey Start Date </label>
+        <input type="date" id="journeydate" value="2021-04-22"> <br>
+        <p><b><span id="BookingDetails"></span></b></p>
+
+        <label for="picuptime">Select your picup Time</label>
+        <input type="time" id="picuptime" value="19:01:00">
+        <p> <b> <span id="pickupTimeDisplay"></span></b></p><br>
+
+        <label for="dateofbirth">Enter your date of birth: </label>
+        <input type="date" id="dateofbirth" value="2021-04-25">
+        <br><br>
+        <p> <b> <span id="SeniorCitizenDisplay"></span></b></p><br>
+
+        <label for="gender"> Gender: </label><br>
+        <input type="radio" id="male" name="gender" value="male">
+
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+
+        <label for="other">Other</label>
+        <br><br>
+        <input type="submit" value="submit">
+
+    </form>
+
+    <script src="Booking_calculation.js"></script>
+</body>
+
+</html>
